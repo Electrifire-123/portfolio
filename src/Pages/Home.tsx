@@ -58,7 +58,7 @@ import { personalDetails } from "../Details";
   }, []);
 
   return (
-    <main className="container mx-auto max-width section sm:flex md:flex justify-between items-center m">
+    <main className="container mx-auto max-width section  md:flex justify-between items-center m">
       <div>
         <h1
           ref={h11}
@@ -68,13 +68,13 @@ import { personalDetails } from "../Details";
         </h1>
         <h1
           ref={h12}
-          className="text-2xl bg-clip-text bg-gradient text-transparent md:text-4xl xl:text-5xl xl:leading-tight font-bold"
+          className="text-2xl bg-clip-text bg-gradient text-transparent md:text-4xl sm:text-center xl:text-5xl xl:leading-tight font-bold"
         >
           {name}
         </h1>
         <h2
           ref={h13}
-          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold"
+          className="text-2xl text-dark-heading dark:text-light-heading sm:text-center md:text-4xl xl:text-5xl xl:leading-tight font-bold"
         >
           {tagline}
         </h2>
