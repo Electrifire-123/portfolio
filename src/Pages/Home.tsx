@@ -9,7 +9,6 @@ import { personalDetails } from "../Details";
   const h13 = useRef(null);
   const myimageref = useRef(null);
 
-  
   useEffect(() => {
     const tl = gsap.timeline();
     tl.from(
@@ -59,11 +58,11 @@ import { personalDetails } from "../Details";
   }, []);
 
   return (
-    <main className="container mx-auto max-width section md:flex justify-between items-center m">
+    <main className="container mx-auto max-width section sm:flex md:flex justify-between items-center m">
       <div>
         <h1
           ref={h11}
-          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold"
+          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl sm:text-center xl:text-5xl xl:leading-tight font-bold"
         >
           Hi,👋<br></br>My Name is<br></br>
         </h1>
