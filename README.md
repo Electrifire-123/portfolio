@@ -3,4 +3,4 @@
 
 ### Here's a Preview 
 ![My Image](preview.gif)
-<img src="/preview.gif" alt="preview" width="600px" />
+<img src="preview.gif" alt="preview" width="600px" />
