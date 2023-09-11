@@ -1,21 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import { logos, socialMediaUrl } from "../Details";
 
 function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
   const { linkdein, github, twitter } = socialMediaUrl;
-  const toggleClass = () => {
-    setIsOpen(!isOpen);
-  };
+  
 
   return (
     <header className="container mx-auto md:flex justify-between py-2 max-width">
       <div className="flex justify-between items-center py-2 md:py-10">
-        <NavLink to="/">
+        <NavLink to="/" className={({isActive}) => isActive ? "text-blue-400 underline" : "nav-link"}>
           <img className="w-14" src={logos.logo} alt="logo" />
         </NavLink>
-        <div onClick={toggleClass} className="cursor-pointer">
+        <div className="cursor-pointer">
           <svg
             className="stroke-dark-heading dark:stroke-white md:hidden"
             width="25"
@@ -33,30 +31,30 @@ function Header() {
           </svg>
         </div>
       </div>
-      <nav className={` ${!isOpen ? "hidden" : null} text-center md:flex justify-between`}>
+      <nav className={` text-center md:flex justify-between`}>
         <ul className="dark:text-light-content font-medium md:flex items-center md:space-x-5 md:mr-10">
           <li className="pb-1 md:pb-0">
-            <NavLink to="/" style={isActive=>({color:isActive?"blue":"black"})  } onClick={toggleClass}>
+            <NavLink to="/" className={({isActive}) => isActive ? "text-blue-400 underline" : "nav-link"}>
               Home
             </NavLink>
           </li>
           <li className="pb-1 md:pb-0">
-            <NavLink to="/about" style={isActive=>({color:isActive?"blue":"black"})  } onClick={toggleClass}>
+            <NavLink to="/about" className={({isActive}) => isActive ? "text-blue-400 underline" : "nav-link"}>
               About
             </NavLink>
           </li>
           <li className="pb-1 md:pb-0">
-            <NavLink to="/technologies" style={isActive=>({color:isActive?"blue":"black"})  } onClick={toggleClass}>
+            <NavLink to="/technologies" className={({isActive}) => isActive ? "text-blue-400 underline" : "nav-link"}>
               Technologies
             </NavLink>
           </li>
           <li className="pb-1 md:pb-0">
-            <NavLink to="/projects" onClick={toggleClass}>
+            <NavLink to="/projects" className={({isActive}) => isActive ? "text-blue-400 underline" : "nav-link"}>
               Projects
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" onClick={toggleClass}>
+            <NavLink to="/contact" className={({isActive}) => isActive ? "text-blue-400 underline" : "nav-link"}>
               Contact
             </NavLink>
           </li>
