@@ -50,8 +50,7 @@ export const personalDetails: Details = {
   name: "Rahul Yadav",
   tagline: "I build things for web",
   img: profile,
-  about: `With over a year of experience as a frontend developer, I have honed my expertise in a range of essential technologies, including ReactJS, JavaScript, TypeScript, CSS, Bootstrap, and HTML. I am well-versed in version control using GitHub, and proficient in project management tools such as Jira. In addition, I have experience working with performance monitoring tools like New Relic, and have even developed custom visualizations. My skills extend to serverless architecture using AWS Lambda.
-Currently contributing my skills at Cloudeq, I am entrusted with the frontend responsibilities for a high-profile McDonald's project. Through this experience, I have gained valuable insights into advanced concepts like Redux, context management, and the utilization of React Form Hooks. My dedication to creating seamless user interfaces drives me to excel in the UI developer role, bringing innovation and efficiency to your team.`,
+  about: `Proficient in a wide range of front-end technologies, such as HTML, CSS, JavaScript, and React, with a demonstrated ability to create visually appealing user interfaces using modern design frameworks like Tailwind CSS. Leveraging React JS for developing dynamic and responsive web applications, I possess a profound understanding of version control through Git to enhance collaborative development. Additionally, adept at translating design concepts into intuitive user experiences using Figma. Skilled in Redux, Redux Toolkit, Tailwind, Bootstrap, Git, GitHub, Jira, and crafting custom visualizations, I bring dynamic expertise and leadership to collaborative environments, aiming to drive impactful solutions.`,
 };
 
 // Enter your Social Media URLs here
