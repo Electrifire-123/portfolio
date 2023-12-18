@@ -85,6 +85,13 @@ export const workDetails : WorkDetails[] = [
     Type: "Full Time",
     Duration: "Aug 2022 - Present",
   },
+  {
+    Position: "Software Trainee",
+    Company: `PrepBytes`,
+    Location: "Remote",
+    Type: "Full Time",
+    Duration: "Aug 2021 - July 2022",
+  },
 ];
 
 // Enter your Education Details here
