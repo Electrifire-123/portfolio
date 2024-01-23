@@ -25,9 +25,9 @@ const typescript = require("./assets/techstack/typescript.png")
 const projectImage1 = require("./assets/projects/project1-image.png");
 const projectImage2 = require("./assets/projects/project2-image.png");
 const projectImage3 = require("./assets/projects/project3-image.png");
-const projectImage4 = require("./assets/projects/project4.jpg");
-const projectImage5 = require("./assets/projects/project5.jpg");
-const projectImage6 = require("./assets/projects/project6.jpg");
+const projectImage4 = require("./assets/projects/projectImage4.png");
+const projectImage6 = require("./assets/projects/preview.gif");
+const projectGif1 = require("./assets/projects/hack_ideas.gif")
 
 // Logos
 type Logos = {
@@ -50,7 +50,8 @@ export const personalDetails: Details = {
   name: "Rahul Yadav",
   tagline: "I build things for web",
   img: profile,
-  about: `Proficient in a wide range of front-end technologies, such as HTML, CSS, JavaScript, and React, with a demonstrated ability to create visually appealing user interfaces using modern design frameworks like Tailwind CSS. Leveraging React JS for developing dynamic and responsive web applications, I possess a profound understanding of version control through Git to enhance collaborative development. Additionally, adept at translating design concepts into intuitive user experiences using Figma. Skilled in Redux, Redux Toolkit, Tailwind, Bootstrap, Git, GitHub, Jira, and crafting custom visualizations, I bring dynamic expertise and leadership to collaborative environments, aiming to drive impactful solutions.`,
+  about: `With over a year of experience as a frontend developer, I have honed my expertise in a range of essential technologies, including ReactJS, JavaScript, TypeScript, CSS, Bootstrap, and HTML. I am well-versed in version control using GitHub, and proficient in project management tools such as Jira. In addition, I have experience working with performance monitoring tools like New Relic, and have even developed custom visualizations. My skills extend to serverless architecture using AWS Lambda.
+Currently contributing my skills at Cloudeq, I am entrusted with the frontend responsibilities for a high-profile McDonald's project. Through this experience, I have gained valuable insights into advanced concepts like Redux, context management, and the utilization of React Form Hooks. My dedication to creating seamless user interfaces drives me to excel in the UI developer role, bringing innovation and efficiency to your team.`,
 };
 
 // Enter your Social Media URLs here
@@ -58,12 +59,13 @@ type URLS = {
   linkdein : string,
   github : string,
   twitter : string,
+  resume: string,
 }
 export const socialMediaUrl:URLS = {
   linkdein: "https://www.linkedin.com/in/rahul-yadav-reactjs",
   github: "https://github.com/electrifire-123",
   twitter: "https://twitter.com/rahulyadavda",
-  // instagram: "https://www.instagram.com/",
+  resume : 'https://drive.google.com/file/d/1Ms1LbJWKx65jsdbKzr3ApLMspUG86XkQ/view?usp=drive_link'
 };
 
 // Enter your Work Experience here
@@ -78,18 +80,18 @@ type WorkDetails = {
 
 export const workDetails : WorkDetails[] = [
   {
-    Position: "Frontend Web Developer",
+    Position: "Software Engineer I",
     Company: `CloudEQ`,
     Location: "Chandigarh",
     Type: "Full Time",
-    Duration: "Aug 2022 - Present",
+    Duration: "Jan 24- Present",
   },
   {
-    Position: "Software Trainee",
-    Company: `PrepBytes`,
-    Location: "Remote",
+    Position: "Junior Software Engineer",
+    Company: `CloudEQ`,
+    Location: "Chandigarh",
     Type: "Full Time",
-    Duration: "Aug 2021 - July 2022",
+    Duration: "Aug 2022 - Jan 24",
   },
 ];
 
@@ -190,7 +192,30 @@ export const projectDetails : ProjectDetails[] = [
     previewLink: "https://electrifire-123.github.io/digitalclock/",
     githubLink: "https://github.com/Electrifire-123/digitalclock",
   },
-  
+  {
+    title: " Hack Ideas ",
+    image: projectGif1,
+    description: `This ia Hackathon challenge site for the tech enthusiasts and job seekers to get some ideas of hackathon and share there own ideas with fellow mates, It has exciting features like creating a challenge, updating, deleting, users can upvote or like your created challenges and they sort the challenges based on votes`,
+    techstack: "HTML/CSS, JavaScript, React, React-Redux, Redux-Toolkit, Appwrite, React-Router-Dom",
+    previewLink: "https://hack-ideas-ochre.vercel.app/",
+    githubLink: "https://github.com/Electrifire-123/Hack_Ideas",
+  },
+  {
+    title: " Custom Blog App",
+    image: projectImage4,
+    description: `This is a blog sharing web application which enables users to design there own blogs in an editor on the web and then share it with world, Event after sharing the blog users can delete and edit there own blogs or they can take the blog off from the public by choosing disable opiton.`,
+    techstack: "HTML/CSS, JavaScript, React, React-Redux, React-Toolkit, TailwindCSS, React-Router-Dom, TinyMCE Editor, Appwrite",
+    previewLink: "https://customblogapp.vercel.app/",
+    githubLink: "https://github.com/Electrifire-123/customblogapp",
+  },
+  {
+    title: "Personal Portfolio",
+    image: projectImage6,
+    description: `The current one you're looking at`,
+    techstack: "HTML/CSS, TypeScript, React, React-Router-Dom, TailwindCSS",
+    previewLink: "https://portfolio-electrifire-123.vercel.app/",
+    githubLink: "https://github.com/Electrifire-123/portfolio",
+  },
 ];
 
 // Enter your Contact Details here
